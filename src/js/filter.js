@@ -1,6 +1,7 @@
 (function($) {
 
   // Toggle expert mode.
+  // TODO: disable toggle of the dropped elements.
   $('#expert').on('click', function() {
     $("[data-disabled*='true']").toggleClass('disabled');
   });
