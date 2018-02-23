@@ -201,7 +201,7 @@
     callback: function(indexArr, data) {
 
       // Caching the DOM elements
-      let components = $('.draggable');
+      let components = $('.draggable[data-dropped="false"]');
       // Getting the components length for further use.
       let componentsCount = components.length;
       // Preparing the array for hidden elements.
@@ -222,24 +222,32 @@
           "category4": $(this).attr("category4"),
         }
 
+        // Handled All category which dont exist in html attr.
         const checkCategory = (category, filter) => {
           return ((filter == 'All' ? filter : category) === filter)
         };
 
-        if (
-          checkCategory(obj.category1, filters.category1) &&
+        if ( 
+          checkCategory(obj.category1, filters.category1) && 
           checkCategory(obj.category2, filters.category2) &&
           checkCategory(obj.category3, filters.category3) &&
           checkCategory(obj.category4, filters.category4) 
-        ) {
+        ) 
+        {
           $(this).parent().parent().removeClass('hide');
           componentsHiddenCount = [];
-        } else {
+        } 
+        else 
+        {
           $(this).parent().parent().addClass('hide');
           componentsHiddenCount.push($(this));
         }
       });
 
+      /*
+        Checking how many items are hidden.
+        if hidden.length are equal to total numbers of item -> display message.
+      */
       if (componentsHiddenCount.length === componentsCount) {
         Materialize.toast('There is no components with selected criteria.', 4000, 'red');
       }
