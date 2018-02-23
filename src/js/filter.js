@@ -251,6 +251,8 @@
       */
       if (componentsHiddenCount.length === componentsCount) {
         Materialize.toast('There is no components with selected criteria.', 4000, 'red');
+      } else {
+        Materialize.toast('Components successfully filtered.', 4000, 'green');
       }
     }
   });
