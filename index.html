@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edit Configuration</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="src/css/mobileSelect.css">
+    <link rel="stylesheet" href="src/css/app.css">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <!-- navigation start -->
+      <nav class="nav">
+        <div class="nav-wrapper">
+          <ul id="nav-mobile" class="left hide-on-med-and-up show-on-small">
+            <li>
+              <a class="btn open-nav waves-effect trash-can" style="display: none" href="#"><i class="material-icons">delete</i></a>
+            </li>
+          </ul>
+          <ul id="nav-mobile" class="right hide-on-med-and-up show-on-small">
+            <li>
+              <a class="btn open-nav waves-effect" href="#" data-activates="slide-out">Open Catalog</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- navigation end -->
+      <!-- slide out menu -->
+      <ul id="slide-out" class="side-nav components">
+        <div class="col s12">
+          <div class="row">
+            <div class="col s6">
+              <label class="switch">
+              <input type="checkbox" id="expert">
+              <span class="slider1 round"></span>
+              </label>
+            </div>
+            <div class="col s6">
+              <!-- close icon -->
+              <span class="right close-btn">
+              <i class="material-icons">close</i>
+              </span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 filter-keys">
+              <div class="filter-btn" id="filter1">
+                <a href="#" class="btn">Filter</a>
+              </div>
+              <!-- <div class="filter-btn" id="filter2">
+                <a href="#" class="btn">C1</a>
+              </div>
+              <div class="filter-btn" id="filter3">
+                <a href="#" class="btn">C2</a>
+              </div>
+              <div class="filter-btn" id="filter4">
+                <a href="#" class="btn">C3</a>
+              </div>
+              <div class="filter-btn" id="filter5">
+                <a href="#" class="btn">C4</a>
+              </div> -->
+            </div>
+          </div>
+          <!-- slide out menu end -->
+        </div>
+        <!-- tab containers -->
+        <div id="component-items" class="col s12">
+          <div class="container component_images center-align">
+            <div class="row">
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="6A" data-id="1" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="6A" data-id="2" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="13A" data-id="3" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="16A" data-id="4" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="20A" data-id="5" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="25A" data-id="6" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik C" category4="32A" data-id="7" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="4 pol 3LN" category3="Charakteristik C" category4="13A" data-id="8" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="4 pol 3LN" category3="Charakteristik C" category4="16A" data-id="9" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="4 pol 3LN" category3="Charakteristik C" category4="20A" data-id="10" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="4 pol 3LN" category3="Charakteristik C" category4="25A" data-id="11" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="4 pol 3LN" category3="Charakteristik C" category4="32A" data-id="12" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik B" category4="10A B" data-id="13" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik B" category4="13A B" data-id="14" data-dropped="false" class="draggable draggable-component" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Optimiert" category2="2 pol LN" category3="Charakteristik B" category4="16A B" data-id="15" data-dropped="false" data-disabled="true" class="draggable draggable-component disabled" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="LS Standard" category2="2 pol LN" category3="Charakteristik B" category4="20A B" data-id="16" data-dropped="false" data-disabled="true" class="draggable draggable-component disabled" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="Kämme" category2="2 pol LN" category3="Charakteristik C" category4="20A" data-id="5" data-dropped="false" class="draggable draggable-comb" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="Kämme" category2="2 pol LN" category3="Charakteristik C" category4="20A" data-id="5" data-dropped="false" class="draggable draggable-comb" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="Kämme" category2="2 pol LN" category3="Charakteristik C" category4="20A" data-id="5" data-dropped="false" class="draggable draggable-comb" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+              <div class="col s4 catalog-item">
+                <div class="col s12">
+                  <img category1="Kämme" category2="2 pol LN" category3="Charakteristik C" category4="20A" data-id="5" data-dropped="false" class="draggable draggable-comb" src="https://greensock.com/wp-content/themes/greensock/images/icon-github.svg" alt="Component image">
+                  <p class="component_title center-align">Title</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+      <!-- main tabs -->
+      <div class="wrapper-full">
+        <div class="container main__container hide-on-med-and-up show-on-small" style="margin-top: 10px">
+          <div class="row">
+            <div class="col s12">
+              <ul class="tabs main-tab-switch">
+                <li class="tab col s4">
+                  <a class="active" href="#rack">Rack</a>
+                </li>
+                <li class="tab col s4">
+                  <a href="#schema">Schema</a>
+                </li>
+                <li class="tab col s4">
+                  <a href="#tree">Tree</a>
+                </li>
+              </ul>
+            </div>
+            <div id="rack" class="col s12">
+              <div class="container">
+                <div class="svg-copy" style="position: relative; width: 320px; margin: 0 auto; z-index: 2">
+                  <!-- FIRST RAIL -->
+                  <div data-row="1_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 10px;" class="rail-comb"></div>
+                  <div data-row="1" style="width:320px; height:80px; background: transparent; position: absolute; top: 30px;" class="rail"></div>
+                  <div data-row="1_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 110px;" class="rail-comb"></div>
+                  <!-- SECOND RAIL -->
+                  <div data-row="2_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 140px;" class="rail-comb"></div>
+                  <div data-row="2" style="width:320px; height:80px; background: transparent; position: absolute; top: 160px;" class="rail"></div>
+                  <div data-row="2_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 240px;" class="rail-comb"></div>
+                  <!-- THIRD RAIL -->
+                  <div data-row="3_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 270px;" class="rail-comb"></div>
+                  <div data-row="3" style="width:320px; height:80px; background: transparent; position: absolute; top: 290px;" class="rail"></div>
+                  <div data-row="3_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 370px;" class="rail-comb"></div>
+                  <!-- FOURTH RAIL -->
+                  <div data-row="4_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 400px;" class="rail-comb"></div>
+                  <div data-row="4" style="width:320px; height:80px; background: transparent; position: absolute; top: 420px;" class="rail"></div>
+                  <div data-row="4_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 500px;" class="rail-comb"></div>
+                  <!-- FIFTH RAIL -->
+                  <div data-row="5_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 530px;" class="rail-comb"></div>
+                  <div data-row="5" style="width:320px; height:80px; background: transparent; position: absolute; top: 550px" class="rail"></div>
+                  <div data-row="5_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 630px;" class="rail-comb"></div>
+                  <!-- SIXTH RAIL -->
+                  <div data-row="6_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 660px;" class="rail-comb"></div>
+                  <div data-row="6" style="width:320px; height:80px; background: transparent; position: absolute; top: 680px;" class="rail"></div>
+                  <div data-row="6_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 760px;" class="rail-comb"></div>
+                  <!-- SEVENTH RAIL -->
+                  <div data-row="7_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 790px;" class="rail-comb"></div>
+                  <div data-row="7" style="width:320px; height:80px; background: transparent; position: absolute; top: 810px;" class="rail"></div>
+                  <div data-row="7_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 890px;" class="rail-comb"></div>
+                  <!-- EITHTH RAIL -->
+                  <div data-row="8_upper" style="width:320px; height:20px; background: transparent; position: absolute; top: 920px;" class="rail-comb"></div>
+                  <div data-row="8" style="width:320px; height:80px; background: transparent; position: absolute; top: 940px;" class="rail"></div>
+                  <div data-row="8_lower" style="width:320px; height:20px; background: transparent; position: absolute; top: 1020px;" class="rail-comb"></div>
+                </div>
+                <svg id="svg">
+                  <rect width="320" height="80" y="30" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="160" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="290" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="420" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="550" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="680" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="810" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                  <rect width="320" height="80" y="940" stroke = "rgb(0,0,0)" stroke-width="1" style="fill:rgb(249, 115, 120)" />
+                </svg>
+              </div>
+            </div>
+            <div id="schema" class="col s12">Schema</div>
+            <div id="tree" class="col s12">Tree</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="src/js/materialize.js"></script>
+    <script src="src/js/mobileSelect.js"></script>
+    <script src="src/js/filter.js"></script>
+    <script src="src/js/app.js"></script>
+  </body>
+</html>
