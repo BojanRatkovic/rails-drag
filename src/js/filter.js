@@ -3,7 +3,7 @@
   // Toggle expert mode.
   // TODO: disable toggle of the dropped elements.
   $('#expert').on('click', function() {
-    $("[data-disabled*='true']").toggleClass('disabled');
+    $(".side-nav [data-disabled*='true']").toggleClass('disabled');
   });
 
   const mobileSelect1 = new MobileSelect({
